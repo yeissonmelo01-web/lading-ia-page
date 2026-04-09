@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Academy - Bootcamp de Inteligencia Artificial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1>AI Academy</h1>
+        <nav>
+            <ul>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#preguntas-frecuentes">FAQ</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+        <a href="#registro" class="btn-link">Inscribirme ahora</a>
+    </header>
+
+    <main>
+        <section id="inicio" class="reveal">
+            <h2>Domina la IA y Escala tu Carrera Profesional</h2>
+            <p>Un programa 100% práctico diseñado para que domines las herramientas que están transformando el mundo y multipliques tus ingresos en el mercado tecnológico actual.</p>
+            <a href="#registro" class="btn-link">¡Quiero empezar ahora!</a>
+        </section>
+
+        <section id="beneficios" class="reveal">
+            <h2>Beneficios de unirte a nuestro Bootcamp</h2>
+            <ul>
+                <li class="reveal" style="transition-delay: 0.1s;">
+                    <strong>Metodología "Aprender haciendo"</strong><br>
+                    Olvídate de la teoría aburrida; construye aplicaciones y soluciones desde la primera sesión con herramientas reales.
+                </li>
+                <li class="reveal" style="transition-delay: 0.2s;">
+                    <strong>Portafolio Profesional de Impacto</strong><br>
+                    Finaliza el bootcamp con proyectos tangibles listos para impresionar a reclutadores o clientes potenciales.
+                </li>
+                <li class="reveal" style="transition-delay: 0.3s;">
+                    <strong>Mentoría con Expertos de la Industria</strong><br>
+                    No estarás solo; contarás con guía directa de profesionales que ya trabajan implementando IA en empresas.
+                </li>
+                <li class="reveal" style="transition-delay: 0.4s;">
+                    <strong>Certificación de Alto Valor</strong><br>
+                    Valida tus nuevas competencias con un diploma que respalda tu capacidad técnica ante el mercado global.
+                </li>
+                <li class="reveal" style="transition-delay: 0.5s;">
+                    <strong>Ecosistema de Herramientas Premium</strong><br>
+                    Acceso y dominio total de las plataformas de IA más avanzadas y actuales del mercado (LLMs, Agentes, Automatizaciones).
+                </li>
+            </ul>
+        </section>
+
+        <section id="testimonios" class="reveal">
+            <h2>Lo que dicen nuestros graduados</h2>
+            <article class="reveal" style="transition-delay: 0.1s;">
+                <h3>"Un cambio total de perspectiva"</h3>
+                <p>"Pasé de no saber nada de código a automatizar procesos complejos en mi empresa con IA. Gracias al bootcamp, hoy lidero proyectos que antes me parecían imposibles de ejecutar."</p>
+                <footer>— Carlos M., Desarrollador de Automatizaciones</footer>
+            </article>
+            <article class="reveal" style="transition-delay: 0.2s;">
+                <h3>"Enfoque 100% práctico"</h3>
+                <p>"Lo que más valoro es el enfoque práctico. En pocas semanas perdí el miedo a la tecnología y construí mi propio portafolio profesional que me ayudó a conseguir mi primer empleo tech."</p>
+                <footer>— Daniela R., Especialista en IA</footer>
+            </article>
+        </section>
+
+        <section id="preguntas-frecuentes" class="reveal">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Necesito conocimientos previos en programación?</summary>
+                <p>No es indispensable. El programa está diseñado para llevarte desde las bases conceptuales hasta un nivel profesional práctico, aunque tener nociones básicas te ayudará a avanzar más rápido.</p>
+            </details>
+            <details>
+                <summary>¿El curso es presencial o remoto?</summary>
+                <p>Es 100% online con sesiones en vivo grabadas y mentorías personalizadas para que puedas avanzar a tu ritmo sin perder la interacción humana.</p>
+            </details>
+            <details>
+                <summary>¿Recibiré un certificado al finalizar?</summary>
+                <p>Sí, obtendrás una certificación de alto valor emitida por AI Academy que avala tus proyectos realizados y las habilidades técnicas adquiridas.</p>
+            </details>
+        </section>
+
+        <section id="registro" class="reveal">
+            <h2>Comienza tu transformación hoy mismo</h2>
+            <p>Completa el formulario y un asesor académico se pondrá en contacto contigo para resolver todas tus dudas.</p>
+            
+            <form id="registrationForm" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+                    <span id="nameError" class="error-message">Ingresa un nombre válido (mínimo 3 letras, sin números).</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono celular:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. +57 300 123 4567">
+                    <span id="phoneError" class="error-message">Ingresa un número de teléfono válido.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico profesional:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+                    <span id="emailError" class="error-message">Por favor, ingresa un correo electrónico válido.</span>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label for="terminos">
+                        Acepto los <a href="#">términos y condiciones</a> y la política de tratamiento de datos personales.
+                    </label>
+                </div>
+                <span id="termsError" class="error-message" style="margin-bottom: 1rem;">Debes aceptar los términos para continuar.</span>
+
+                <button type="submit">Enviar información y aplicar</button>
+                <div id="successMessage" class="success-alert">¡Registro exitoso! Pronto estaremos en contacto contigo.</div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p><strong>AI Academy</strong></p>
+        <p>&copy; 2024 AI Academy - Elevando el potencial humano con Inteligencia Artificial. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
